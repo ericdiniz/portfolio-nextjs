@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "next build && next export && touch out/.nojekyll && git add out && git commit -m 'Deploy GitHub Pages' && git push origin gh-pages"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -23,6 +25,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.2"
   }
 }
