@@ -16,19 +16,23 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
+const router = useRouter();
+
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const scrollToSection = (id) => {
+    router.push(`#${id}`, undefined, { shallow: true });
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
         const offset = 100;
-        const top = section.offsetTop - offset;
-        window.scrollTo({ top, behavior: "smooth" });
-        setMobileOpen(false);
+        window.scrollTo({
+          top: section.offsetTop - offset,
+          behavior: "smooth",
+        });
       }
-    }, 100);
+    }, 300);
   };
 
   const toggleDrawer = (open) => () => {
