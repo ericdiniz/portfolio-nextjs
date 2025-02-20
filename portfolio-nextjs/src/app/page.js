@@ -1,8 +1,17 @@
-import { useRouter } from "next/router";
+"use client";
+
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Experiences from "@/components/Experiences";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Technologies from "@/components/Technologies";
+
 export default function Home() {
-  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (window.location.hash) {
@@ -15,7 +24,7 @@ export default function Home() {
         }
       }, 500);
     }
-  }, [router.asPath]);
+  }, [pathname]);
 
   return (
     <>
