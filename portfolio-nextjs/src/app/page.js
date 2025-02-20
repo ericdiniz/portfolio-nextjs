@@ -14,16 +14,21 @@ export default function Home() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (window.location.hash) {
-      const id = window.location.hash.replace("#", "");
-      setTimeout(() => {
-        const section = document.getElementById(id);
-        if (section) {
-          const offset = 100;
-          window.scrollTo({ top: section.offsetTop - offset, behavior: "smooth" });
-        }
-      }, 500);
-    }
+    const handleScroll = () => {
+      if (window.location.hash) {
+        const id = window.location.hash.replace("#", "");
+        setTimeout(() => {
+          const section = document.getElementById(id);
+          if (section) {
+            const offset = 100;
+            window.scrollTo({ top: section.offsetTop - offset, behavior: "smooth" });
+          }
+        }, 500);
+      }
+    };
+
+    window.addEventListener("load", handleScroll);
+    return () => window.removeEventListener("load", handleScroll);
   }, [pathname]);
 
   return (
