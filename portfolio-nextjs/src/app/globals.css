@@ -1,13 +1,13 @@
 :root {
   --background: #000000; /* Preto */
-  --foreground: #ffffff; /* Texto branco */
+  --foreground: #000000; /* Texto branco */
   --navbar-background: #2c2c2c; /* Cinza grafite */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #ffffff;
+    --foreground: #000000;
     --navbar-background: #2c2c2c;
   }
 }
