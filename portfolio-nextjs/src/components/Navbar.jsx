@@ -23,7 +23,7 @@ export default function Navbar() {
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
-        const offset = 80;
+        const offset = 100;
         const top = section.offsetTop - offset;
         window.scrollTo({ top, behavior: "smooth" });
         setMobileOpen(false);

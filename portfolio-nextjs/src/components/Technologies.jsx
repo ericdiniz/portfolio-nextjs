@@ -60,7 +60,15 @@ const techCategories = {
 
 const Technologies = () => {
   return (
-    <Box sx={{ textAlign: "center", my: 4 }}>
+    <Box
+      sx={{
+        backgroundColor: "#121212",
+        textAlign: "center",
+        my: 4,
+        color: "#fff",
+        padding: "50px 20px",
+      }}
+    >
       <Typography variant="h4" gutterBottom>
         Tecnologias
       </Typography>

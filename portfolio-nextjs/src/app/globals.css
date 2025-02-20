@@ -1,15 +1,15 @@
 /* globals.css */
 :root {
-  --background: #000000; /* Preto */
-  --foreground: #FFFFFF; /* Branco */
-  --navbar-background: #2c2c2c; /* Cinza grafite */
+  --background: #000000 !important;
+  --foreground: #FFFFFF !important;
+  --navbar-background: #2c2c2c !important;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #FFFFFF;
-    --navbar-background: #2c2c2c;
+    --background: #000000 !important;
+    --foreground: #FFFFFF !important;
+    --navbar-background: #2c2c2c !important;
   }
 }
 
