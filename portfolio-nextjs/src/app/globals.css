@@ -1,13 +1,14 @@
+/* globals.css */
 :root {
   --background: #000000; /* Preto */
-  --foreground: #000000; /* Texto branco */
+  --foreground: #FFFFFF; /* Branco */
   --navbar-background: #2c2c2c; /* Cinza grafite */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #000000;
+    --foreground: #FFFFFF;
     --navbar-background: #2c2c2c;
   }
 }

@@ -1,3 +1,4 @@
+// layout.tsx
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -27,9 +28,9 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{ background: "var(--background)", color: "var(--foreground)" }}
+        style={{ backgroundColor: "#000000", color: "#FFFFFF" }}
       >
-        <main style={{ paddingTop: "64px" }}>{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
