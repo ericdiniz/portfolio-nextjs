@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ background: "var(--background)", color: "var(--foreground)" }}
       >
         <main style={{ paddingTop: "64px" }}>{children}</main>
       </body>
