@@ -22,14 +22,13 @@ export default function Navbar() {
   const scrollToSection = (id) => {
     setTimeout(() => {
       const section = document.getElementById(id);
-      console.log("Seção encontrada:", section);
       if (section) {
-        const offset = 100;
+        const offset = 80; // Ajuste para navbar fixa
         const top = section.offsetTop - offset;
         window.scrollTo({ top, behavior: "smooth" });
-        setMobileOpen(false);
+        setMobileOpen(false); // Fecha o menu após a navegação
       }
-    }, 100);
+    }, 50);
   };
 
   const toggleDrawer = (open) => () => {
@@ -53,6 +52,8 @@ export default function Navbar() {
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Meu Portfólio
           </Typography>
+
+          {/* Ícone do Menu para Mobile */}
           <IconButton
             edge="end"
             color="inherit"
@@ -62,6 +63,8 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
+
+          {/* Menu Desktop */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
               <Button
@@ -75,11 +78,25 @@ export default function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-      <Drawer anchor="right" open={mobileOpen} onClose={toggleDrawer(false)}>
+
+      {/* Drawer para Mobile */}
+      <Drawer
+        anchor="right"
+        open={mobileOpen}
+        onClose={toggleDrawer(false)}
+        ModalProps={{
+          keepMounted: true, // Melhora o desempenho em dispositivos móveis
+        }}
+      >
         <List sx={{ width: 250 }}>
           {navItems.map((item) => (
             <ListItem key={item.id} disablePadding>
-              <ListItemButton onClick={() => scrollToSection(item.id)}>
+              <ListItemButton
+                onClick={() => {
+                  scrollToSection(item.id);
+                  setMobileOpen(false);
+                }}
+              >
                 <ListItemText primary={item.label} />
               </ListItemButton>
             </ListItem>
