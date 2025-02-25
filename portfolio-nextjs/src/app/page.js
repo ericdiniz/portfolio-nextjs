@@ -15,8 +15,8 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.location.hash) {
-        const id = window.location.hash.replace("#", "");
+      const id = window.location.hash.replace("#", "");
+      if (id) {
         setTimeout(() => {
           const section = document.getElementById(id);
           if (section) {
@@ -27,9 +27,14 @@ export default function Home() {
       }
     };
 
+    window.addEventListener("hashchange", handleScroll);
     window.addEventListener("load", handleScroll);
-    return () => window.removeEventListener("load", handleScroll);
-  }, [pathname]);
+
+    return () => {
+      window.removeEventListener("hashchange", handleScroll);
+      window.removeEventListener("load", handleScroll);
+    };
+  }, []);
 
   return (
     <>

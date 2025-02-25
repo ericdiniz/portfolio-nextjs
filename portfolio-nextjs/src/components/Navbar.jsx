@@ -22,7 +22,11 @@ export default function Navbar() {
   const router = useRouter();
 
   const scrollToSection = (id) => {
-    router.push(`#${id}`);
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = 50;
+      window.scrollTo({ top: section.offsetTop - offset, behavior: "smooth" });
+    }
   };
 
   const toggleDrawer = (open) => () => {
