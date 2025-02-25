@@ -14,20 +14,11 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const router = useRouter();
-
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      const offset = 50;
-      window.scrollTo({ top: section.offsetTop - offset, behavior: "smooth" });
-    }
-  };
 
   const toggleDrawer = (open) => () => {
     setMobileOpen(open);
@@ -51,7 +42,6 @@ export default function Navbar() {
             Meu Portfólio
           </Typography>
 
-          {/* Ícone do Menu para Mobile */}
           <IconButton
             edge="end"
             color="inherit"
@@ -62,28 +52,22 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
 
-          {/* Menu Desktop */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
-              <Button
-                key={item.id}
-                color="inherit"
-                onClick={() => scrollToSection(item.id)}
-              >
-                {item.label}
-              </Button>
+              <Link key={item.id} href={`/#${item.id}`} passHref>
+                <Button>{item.label}</Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
       </AppBar>
 
-      {/* Drawer para Mobile */}
       <Drawer
         anchor="right"
         open={mobileOpen}
         onClose={toggleDrawer(false)}
         ModalProps={{
-          keepMounted: true, // Melhora o desempenho em dispositivos móveis
+          keepMounted: true,
         }}
       >
         <List sx={{ width: 250 }}>
@@ -91,11 +75,12 @@ export default function Navbar() {
             <ListItem key={item.id} disablePadding>
               <ListItemButton
                 onClick={() => {
-                  scrollToSection(item.id);
                   setMobileOpen(false);
                 }}
               >
-                <ListItemText primary={item.label} />
+                <Link href={`/#${item.id}`} passHref>
+                  <ListItemText primary={item.label} />
+                </Link>
               </ListItemButton>
             </ListItem>
           ))}
