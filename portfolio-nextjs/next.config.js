@@ -7,10 +7,13 @@ const nextConfig = {
         unoptimized: true,
     },
     trailingSlash: true,
+    experimental: {
+        appDir: true,
+    },
     ...(isProd && {
         basePath: "/portfolio-nextjs",
         assetPrefix: "/portfolio-nextjs/",
     }),
 };
 
-module.exports = nextConfig;
+export default nextConfig;
