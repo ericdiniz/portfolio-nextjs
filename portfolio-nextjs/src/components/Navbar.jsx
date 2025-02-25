@@ -14,21 +14,15 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const router = useRouter();
 
   const scrollToSection = (id) => {
-    setTimeout(() => {
-      const section = document.getElementById(id);
-      if (section) {
-        const offset = 80; // Ajuste para navbar fixa
-        const top = section.offsetTop - offset;
-        window.scrollTo({ top, behavior: "smooth" });
-        setMobileOpen(false); // Fecha o menu após a navegação
-      }
-    }, 50);
+    router.push(`#${id}`);
   };
 
   const toggleDrawer = (open) => () => {
