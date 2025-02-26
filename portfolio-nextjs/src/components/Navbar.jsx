@@ -20,7 +20,16 @@ import { useState } from "react";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const toggleDrawer = (open) => () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = 50;
+      const top = section.offsetTop - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
+  const toggleDrawer = (open) => {
     setMobileOpen(open);
   };
 
@@ -38,7 +47,7 @@ export default function Navbar() {
         sx={{ backgroundColor: "rgb(50, 50, 50)", boxShadow: "none" }}
       >
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" sx={{ flexGrow: 1, color: "white" }}>
             Meu Portfólio
           </Typography>
 
@@ -47,15 +56,16 @@ export default function Navbar() {
             color="inherit"
             aria-label="menu"
             sx={{ display: { xs: "block", md: "none" } }}
-            onClick={toggleDrawer(true)}
+            onClick={() => toggleDrawer(true)}
           >
             <MenuIcon />
           </IconButton>
 
+          {/* Menu Desktop */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
               <Link key={item.id} href={`/#${item.id}`} passHref>
-                <Button>{item.label}</Button>
+                <Button sx={{ color: "white" }}>{item.label}</Button>
               </Link>
             ))}
           </Box>
@@ -65,9 +75,12 @@ export default function Navbar() {
       <Drawer
         anchor="right"
         open={mobileOpen}
-        onClose={toggleDrawer(false)}
+        onClose={() => toggleDrawer(false)}
         ModalProps={{
           keepMounted: true,
+        }}
+        sx={{
+          "& .MuiDrawer-paper": { backgroundColor: "black" },
         }}
       >
         <List sx={{ width: 250 }}>
@@ -75,12 +88,11 @@ export default function Navbar() {
             <ListItem key={item.id} disablePadding>
               <ListItemButton
                 onClick={() => {
+                  scrollToSection(item.id);
                   setMobileOpen(false);
                 }}
               >
-                <Link href={`/#${item.id}`} passHref>
-                  <ListItemText primary={item.label} />
-                </Link>
+                <ListItemText primary={item.label} sx={{ color: "white" }} />
               </ListItemButton>
             </ListItem>
           ))}

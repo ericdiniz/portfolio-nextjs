@@ -20,7 +20,7 @@ export default function Home() {
         setTimeout(() => {
           const section = document.getElementById(id);
           if (section) {
-            const offset = 100;
+            const offset = 200;
             window.scrollTo({ top: section.offsetTop - offset, behavior: "smooth" });
           }
         }, 500);
