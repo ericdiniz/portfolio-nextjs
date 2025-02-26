@@ -1,30 +1,29 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Experiences from "@/components/Experiences";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Technologies from "@/components/Technologies";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
       const id = window.location.hash.replace("#", "");
       if (id) {
-        const section = document.getElementById(id);
-        if (section) {
-          const offset = 100;
-          section.scrollIntoView({ behavior: "smooth", block: "start" });
-          window.scrollBy(0, -offset);
-        }
+        setTimeout(() => {
+          const section = document.getElementById(id);
+          if (section) {
+            const offset = 200;
+            window.scrollTo({ top: section.offsetTop - offset, behavior: "smooth" });
+          }
+        }, 500);
       }
     };
 
@@ -36,8 +35,6 @@ export default function Home() {
       window.removeEventListener("load", handleScroll);
     };
   }, []);
-
-  if (!isClient) return null;
 
   return (
     <>
