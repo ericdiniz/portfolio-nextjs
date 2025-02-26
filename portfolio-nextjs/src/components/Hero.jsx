@@ -10,8 +10,8 @@ export default function Hero() {
       }}
     >
       <h3>
-        Qualidade impulsionada por automação, métricas que direcionam decisões,
-        soluções full stack que transformam código em inovação.
+        QA Engineer, 2 anos de experiência em testes, com foco em testes
+        automatizados.
       </h3>
     </section>
   );
