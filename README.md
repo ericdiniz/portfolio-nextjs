@@ -45,4 +45,4 @@ Este é o código-fonte do meu portfólio pessoal, criado com **Next.js** e esti
 
 O projeto está implantado na **Vercel**. Você pode acessá-lo através do link:
 
-[https://portfolio-nextjs-theta-dusky.vercel.app/]
+[https://ericdiniz-portfolio.vercel.app/]
