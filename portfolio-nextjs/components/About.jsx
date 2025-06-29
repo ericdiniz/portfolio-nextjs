@@ -12,12 +12,16 @@ const AboutMe = () => {
             Sobre Mim
           </Typography>
           <Typography variant="body1" paragraph>
-            Sou Eric Rodrigues Diniz, tenho 24 anos e curso o 6º período de
-            Engenharia de Software na PUC Minas (Campus Lourdes), nesse semestre
-            estou aprendendo sobre medição e experimentação de software,
-            engenharia econômica para software e gerência de configuração e
-            evolução de software.
+            Sou Eric Rodrigues Diniz, tenho 24 anos e estou no 7º período do
+            curso de Engenharia de Software na PUC Minas (Campus Lourdes). Neste
+            semestre, estou me aprofundando em temas como gestão da produção de
+            software, desenvolvimento de aplicações móveis e distribuídas,
+            segurança e auditoria de sistemas, além de tópicos avançados em
+            engenharia de software. Também iniciei meu Trabalho de Conclusão de
+            Curso, consolidando os conhecimentos adquiridos ao longo da
+            graduação.
           </Typography>
+
           <Typography variant="body1" paragraph>
             Sou um profissional apaixonado por Qualidade de Software, Automação
             de Testes e Desenvolvimento Full Stack. Minha expertise está na
