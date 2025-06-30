@@ -11,7 +11,7 @@ export default function Hero() {
     >
       <h3>
         QA Engineer, 2 anos de experiência em testes, com foco em testes
-        automatizados com TS e Playwright.
+        automatizados no Playwright (TypeScript).
       </h3>
     </section>
   );
