@@ -3,30 +3,21 @@ import { Avatar, Box, Grid, Typography } from "@mui/material";
 const AboutMe = () => {
   return (
     <Box
-      sx={{
-        backgroundColor: "#121212",
-        color: "#fff",
-        pt: "20px",
-        pb: "20px",
-        px: "20px",
-      }}
+      sx={{ backgroundColor: "#121212", color: "#fff", padding: "50px 20px" }}
     >
       <Grid container spacing={4} alignItems="center">
+        {/* Texto - Alinhado à Esquerda */}
         <Grid xs={12} md={7} item sx={{ textAlign: "left" }}>
           <Typography variant="h4" fontWeight="bold" gutterBottom>
             Sobre Mim
           </Typography>
           <Typography variant="body1" paragraph>
-            Sou Eric Rodrigues Diniz, tenho 24 anos e estou no 7º período do
-            curso de Engenharia de Software na PUC Minas (Campus Lourdes). Neste
-            semestre, estou me aprofundando em temas como gestão da produção de
-            software, desenvolvimento de aplicações móveis e distribuídas,
-            segurança e auditoria de sistemas, além de tópicos avançados em
-            engenharia de software. Também iniciei meu Trabalho de Conclusão de
-            Curso, consolidando os conhecimentos adquiridos ao longo da
-            graduação.
+            Sou Eric Rodrigues Diniz, tenho 24 anos e curso o 6º período de
+            Engenharia de Software na PUC Minas (Campus Lourdes), nesse semestre
+            estou aprendendo sobre medição e experimentação de software,
+            engenharia econômica para software e gerência de configuração e
+            evolução de software.
           </Typography>
-
           <Typography variant="body1" paragraph>
             Sou um profissional apaixonado por Qualidade de Software, Automação
             de Testes e Desenvolvimento Full Stack. Minha expertise está na
@@ -47,6 +38,7 @@ const AboutMe = () => {
           </Typography>
         </Grid>
 
+        {/* Avatar - Centralizado */}
         <Grid
           xs={12}
           md={5}

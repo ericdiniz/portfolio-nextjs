@@ -20,6 +20,7 @@ export default function Navbar() {
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
+        {/* Texto "Meu Portfólio" some em telas menores que md */}
         <Typography
           variant="h6"
           sx={{ color: "white", display: { xs: "none", md: "block" } }}
@@ -27,14 +28,15 @@ export default function Navbar() {
           Meu Portfólio
         </Typography>
 
+        {/* Botões responsivos */}
         <Box>
           {navItems.map((item) => (
             <Link key={item.id} href={`/#${item.id}`} passHref>
               <Button
                 sx={{
                   color: "white",
-                  fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem" },
-                  padding: { xs: "4px 8px", sm: "6px 12px", md: "8px 16px" },
+                  fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem" }, // Ajusta o tamanho do texto nos botões
+                  padding: { xs: "4px 8px", sm: "6px 12px", md: "8px 16px" }, // Ajusta o padding
                 }}
               >
                 {item.label}

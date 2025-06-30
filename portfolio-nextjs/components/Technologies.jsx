@@ -24,37 +24,61 @@ import {
 } from "react-icons/si";
 import PlaywrightIcon from "./icons/PlaywrightIcon";
 
-// Mapeamento de tecnologias com ícones
 const techCategories = {
   "Linguagens e Frameworks": [
-    { name: "Java (Spring Boot)", icon: <SiSpringboot size={30} /> },
-    { name: "Node.js", icon: <FaNodeJs size={30} /> },
-    { name: "JavaScript (JS)", icon: <FaJs size={30} /> },
-    { name: "TypeScript (TS)", icon: <SiTypescript size={30} /> },
-    { name: "React.JS", icon: <FaReact size={30} /> },
-    { name: "Vue.js", icon: <FaVuejs size={30} /> },
-    { name: "Express", icon: <SiExpress size={30} /> },
-    { name: "NextJS", icon: <SiNextdotjs size={30} /> },
-    { name: "NuxtJS", icon: <SiNuxtdotjs size={30} /> },
+    {
+      name: "Java (Spring Boot)",
+      icon: <SiSpringboot size={30} color="#6DB33F" />,
+    },
+    { name: "Node.js", icon: <FaNodeJs size={30} color="#43853d" /> },
+    { name: "JavaScript (JS)", icon: <FaJs size={30} color="#f7df1e" /> },
+    {
+      name: "TypeScript (TS)",
+      icon: <SiTypescript size={30} color="#3178c6" />,
+    },
+    { name: "React.JS", icon: <FaReact size={30} color="#61DAFB" /> },
+    { name: "Vue.js", icon: <FaVuejs size={30} color="#42b883" /> },
+    { name: "Express", icon: <SiExpress size={30} color="#000000" /> },
+    { name: "NextJS", icon: <SiNextdotjs size={30} color="#000000" /> },
+    { name: "NuxtJS", icon: <SiNuxtdotjs size={30} color="#00C58E" /> },
   ],
   "Bibliotecas e Ferramentas": [
-    { name: "Material-UI (MUI)", icon: <SiMui size={30} /> },
-    { name: "Git", icon: <FaGitAlt size={30} /> },
+    { name: "Material-UI (MUI)", icon: <SiMui size={30} color="#007FFF" /> },
+    { name: "Git", icon: <FaGitAlt size={30} color="#f34f29" /> },
   ],
   "Testes e Qualidade de Software": [
-    { name: "Jest", icon: <SiJest size={30} /> },
-    { name: "JUnit", icon: <SiJunit5 size={30} /> },
-    { name: "Cypress", icon: <SiCypress size={30} /> },
-    { name: "Postman", icon: <SiPostman size={30} /> },
-    { name: "Playwright", icon: <PlaywrightIcon size={30} color="#ffffff" /> },
-    { name: "Testes Manuais", icon: <MdOutlineBugReport size={30} /> },
+    { name: "Jest", icon: <SiJest size={30} color="#99425b" /> },
+    { name: "JUnit", icon: <SiJunit5 size={30} color="#25A162" /> },
+    { name: "Cypress", icon: <SiCypress size={30} color="#000000" /> },
+    { name: "Postman", icon: <SiPostman size={30} color="#FF6C37" /> },
+    { name: "Playwright", icon: <PlaywrightIcon size={30} color="#000000" /> },
+    {
+      name: "Orange Testing",
+      icon: (
+        <img
+          src="/images/orangetesting.png"
+          alt="Orange Testing"
+          style={{ width: 30, height: 30, borderRadius: "50%" }}
+        />
+      ),
+    },
+    {
+      name: "Testes Manuais",
+      icon: <MdOutlineBugReport size={30} color="#000000" />,
+    },
   ],
   "Metodologias e Gerenciamento": [
-    { name: "Jira (Scrum e Kanban)", icon: <FaJira size={30} /> },
+    {
+      name: "Jira (Scrum e Kanban)",
+      icon: <FaJira size={30} color="#0052cc" />,
+    },
   ],
   "CI/CD e Outras Ferramentas": [
-    { name: "CI/CD (Vercel)", icon: <SiVercel size={30} /> },
-    { name: "Microsoft Office", icon: <FaMicrosoft size={30} /> },
+    { name: "CI/CD (Vercel)", icon: <SiVercel size={30} color="#000000" /> },
+    {
+      name: "Microsoft Office",
+      icon: <FaMicrosoft size={30} color="#f25022" />,
+    },
   ],
 };
 
@@ -66,7 +90,9 @@ const Technologies = () => {
         textAlign: "center",
         my: 4,
         color: "#fff",
-        padding: "50px 20px",
+        pt: "20px",
+        pb: "20px",
+        px: "20px",
       }}
     >
       <Typography variant="h4" gutterBottom>
@@ -84,16 +110,20 @@ const Technologies = () => {
                   sx={{
                     width: 120,
                     height: 120,
+                    backgroundColor: "#ffffff",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     transition: "0.3s",
-                    "&:hover": { transform: "scale(1.1)" },
+                    "&:hover": {
+                      transform: "scale(1.1)",
+                      boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
+                    },
                   }}
                 >
                   <CardContent sx={{ textAlign: "center" }}>
                     {icon}
-                    <Typography variant="body2" sx={{ mt: 1 }}>
+                    <Typography variant="body2" sx={{ mt: 1, color: "#000" }}>
                       {name}
                     </Typography>
                   </CardContent>

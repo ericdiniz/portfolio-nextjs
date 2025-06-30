@@ -2,22 +2,6 @@ import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 
 const experiences = [
   {
-    title: "Estagiário QA Automação | Cargo Sapiens",
-    period: "abril de 2025 - atualmente",
-    details: [
-      {
-        label: "Testes Automatizados",
-        description:
-          "Desenvolvo testes automatizados com Playwright (TypeScript), Orange Testing e Postman, abrangendo testes unitários, de integração e de aceitação (E2E). Também integro os testes às pipelines de CI/CD, assegurando a qualidade contínua e a confiabilidade das aplicações.",
-      },
-      {
-        label: "Documentação e Análise",
-        description:
-          "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão.",
-      },
-    ],
-  },
-  {
     title: "Estagiário QA Automação | Mova SEP SA",
     period: "janeiro de 2023 - fevereiro 2025",
     details: [
@@ -50,23 +34,23 @@ const experiences = [
   },
   {
     title: "Monitor em Engenharia de Software | PUC Minas",
+    period: "outubro de 2023 - dezembro de 2024",
     details: [
       {
-        description:
-          "Responsável por auxiliar alunos com dificuldades em atividades e avaliações da disciplina, além de contribuir com a elaboração de exercícios, a pedido dos professores, durante o período de monitoria.",
-      },
-      {
         label: "Programação Modular (out 2023 – dez 2023)",
+        description:
+          "Auxílio para alunos com dificuldades nas atividades e provas da disciplina.",
       },
       {
         label:
           "Fundamentos de Projeto e Análise de Algoritmos (fev 2024 – jun 2024)",
+        description:
+          "Auxílio para alunos com dificuldades nas atividades e provas da disciplina.",
       },
       {
         label: "Programação Modular (ago 2024 – dez 2024)",
-      },
-      {
-        label: "Teoria dos Grafos (fev 2025 – jul 2025)",
+        description:
+          "Auxílio para alunos com dificuldades nas atividades e provas da disciplina.",
       },
     ],
   },
@@ -75,14 +59,7 @@ const experiences = [
 const Experiences = () => {
   return (
     <Box
-      sx={{
-        backgroundColor: "#121212",
-        color: "#fff",
-        pt: "20px",
-        pb: "20px",
-        px: "20px",
-        mt: 4,
-      }}
+      sx={{ backgroundColor: "#121212", color: "#fff", padding: "50px 20px" }}
     >
       <Typography
         variant="h4"
@@ -103,13 +80,9 @@ const Experiences = () => {
                 <Typography variant="h6" fontWeight="bold">
                   {exp.title}
                 </Typography>
-                <Typography variant="subtitle1" color="gray">
+                <Typography variant="subtitle2" color="gray">
                   {exp.period}
                 </Typography>
-                <Typography variant="subtitle2" color="gray">
-                  {exp.description}
-                </Typography>
-
                 {exp.details.map((detail, idx) => (
                   <Box key={idx} mt={2}>
                     <Typography

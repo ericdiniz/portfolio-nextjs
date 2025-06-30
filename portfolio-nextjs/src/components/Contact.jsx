@@ -1,4 +1,4 @@
-import { Email, GitHub, LinkedIn } from "@mui/icons-material";
+import { Email, GitHub, LinkedIn, Phone } from "@mui/icons-material";
 import {
   Box,
   Card,
@@ -10,6 +10,11 @@ import {
 } from "@mui/material";
 
 const contacts = [
+  {
+    icon: <Phone />,
+    text: "(31) 99665-1808",
+    link: "tel:+5531996651808",
+  },
   {
     icon: <Email />,
     text: "eric.r.diniz@gmail.com",
@@ -33,9 +38,7 @@ const Contact = () => {
       sx={{
         backgroundColor: "#121212",
         color: "#fff",
-        pt: "20px",
-        pb: "20px",
-        px: "20px",
+        padding: "50px 20px",
         textAlign: "center",
       }}
     >
