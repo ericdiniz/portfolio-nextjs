@@ -25,6 +25,10 @@ if (!i18n.isInitialized) {
             detection: {
                 order: ["localStorage", "navigator"],
                 caches: ["localStorage"],
+                lookupLocalStorage: "i18nextLng"
+            },
+            react: {
+                useSuspense: false,
             },
         });
 }

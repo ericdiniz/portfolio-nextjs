@@ -3,50 +3,70 @@
     "about": "About Me",
     "experiences": "Experiences",
     "technologies": "Technologies",
-    "contact_title": "Contact",
     "contact": "Contact",
-    "hero_text": "QA Engineer, 2 years of experience in testing, focused on automated testing with TS and Playwright.",
-    "about_paragraph1": "I'm Eric Rodrigues Diniz, 24 years old, currently in the 6th semester of the Software Engineering course at PUC Minas (Lourdes Campus). This semester, I'm studying software measurement and experimentation, software economics, and configuration and evolution management.",
-    "about_paragraph2": "I'm a professional passionate about Software Quality, Test Automation, and Full Stack Development. My expertise lies in building efficient and scalable solutions, ensuring clean, well-structured, and testable code.",
-    "about_paragraph3": "I have strong experience in Backend (Node.js with Express and Spring Boot) and Frontend (Next.js and Nuxt.js), applying SOLID principles and Clean Code to build robust and maintainable systems. I also have 2 years of experience working as a QA (both automation and manual), using Playwright and TypeScript for frontend and API regression testing. I’ve also performed integration tests using Axios and TypeScript. I contributed to building a testing platform at MOVA SEP SA using Nuxt.js, Pinia, and Axios on the frontend, while the backend was developed in PHP with Hyperf.",
-    "experience1_title": "QA Automation Intern | Mova SEP SA",
-    "experience1_period": "January 2023 - February 2025",
+    "contact_title": "Contact",
+    "hero_text": "QA Engineer, 2 years of experience in testing, focused on automated testing with Playwright (TypeScript).",
+    "about_paragraph1": "I'm Eric Rodrigues Diniz, 24 years old, currently in the 7th semester of the Software Engineering course at PUC Minas (Lourdes Campus). This semester, I'm diving into topics such as software production management, mobile and distributed application development, system security and auditing, as well as advanced topics in software engineering. I've also started my Graduation Project, consolidating the knowledge acquired throughout the course.",
+    "about_paragraph2": "I'm a professional passionate about Software Quality, Test Automation, and Full Stack Development. My expertise lies in creating efficient and scalable solutions, ensuring clean, well-structured, and testable code.",
+    "about_paragraph3": "I have strong experience in Backend (Node.js with Express and Spring Boot) and Frontend (Next.js and Nuxt.js), applying SOLID principles and Clean Code to build robust and maintainable systems. I also have work experience in both Manual and Automated QA, working for 2 years with Playwright and TypeScript for frontend and API regression tests. I have also performed integration tests using Axios and TypeScript. I contributed to building a testing platform at MOVA SEP SA using Nuxt.js, Pinia, and Axios on the frontend, while the backend was developed in PHP with Hyperf.",
+    "experience1_title": "QA Automation Intern | Cargo Sapiens",
+    "experience1_period": "April 2025 - Present",
     "experience1_details": [
         {
             "label": "Automated Testing",
-            "description": "Development of automated tests using Playwright and TypeScript, including API testing, ensuring the quality and reliability of applications."
+            "description": "I develop automated tests using Playwright (TypeScript), Orange Testing, and Postman, covering unit, integration, and acceptance (E2E) tests. I also integrate tests into CI/CD pipelines, ensuring continuous quality and reliability of applications."
         },
         {
             "label": "Documentation and Analysis",
-            "description": "Created system and process documentation, helping to identify and analyze failures during the software testing process under supervision."
+            "description": "Preparation of system, program, and routine documentation, assisting in identifying and analyzing bugs during the software testing process under supervision."
+        }
+    ],
+    "experience2_title": "QA Automation Intern | Mova SEP SA",
+    "experience2_period": "January 2023 - February 2025",
+    "experience2_details": [
+        {
+            "label": "Automated Testing",
+            "description": "Development of automated tests using Playwright and TypeScript, as well as API test execution, ensuring quality and application reliability."
+        },
+        {
+            "label": "Documentation and Analysis",
+            "description": "Preparation of system, program, and routine documentation, assisting in identifying and analyzing bugs during the software testing process under supervision."
         },
         {
             "label": "Frontend Development",
-            "description": "Implemented frontend integrations using Vue.js and Axios, ensuring efficient API communication in MVC and microservices-based architectures."
+            "description": "Implementation of frontend integrations using Vue.js and Axios, ensuring efficient API communication in MVC and microservices architectures."
         },
         {
             "label": "User Experience",
-            "description": "Built robust, responsive, and intuitive interfaces using Vuetify, delivering a consistent and high-quality user experience."
+            "description": "Development of solid, responsive, and intuitive interfaces with Vuetify, delivering a consistent and high-quality user experience."
         },
         {
             "label": "Unit Testing",
-            "description": "Created unit tests with JEST in NuxtJS to ensure code stability and reliability."
+            "description": "Creation of unit tests using JEST in NuxtJS to ensure code stability and reliability."
         }
     ],
-    "experience2_title": "Software Engineering Monitor | PUC Minas",
-    "experience2_period": "October 2023 - December 2024",
-    "experience2_details": [
+    "experience3_title": "Software Engineering Monitor | PUC Minas",
+    "experience3_period": "October 2023 - July 2025",
+    "experience3_details": [
+        {
+            "label": "Responsibilities",
+            "description": "Responsible for assisting students with difficulties in activities and assessments of the discipline, and contributing to the development of exercises, upon request by professors, during the monitoring period."
+        },
         {
             "label": "Modular Programming (Oct 2023 – Dec 2023)",
-            "description": "Supported students with coursework and assessments for the discipline."
+            "description": ""
         },
         {
             "label": "Foundations of Project and Algorithm Analysis (Feb 2024 – Jun 2024)",
-            "description": "Supported students with coursework and assessments for the discipline."
+            "description": ""
         },
         {
             "label": "Modular Programming (Aug 2024 – Dec 2024)",
-            "description": "Supported students with coursework and assessments for the discipline."
+            "description": ""
+        },
+        {
+            "label": "Graph Theory (Feb 2025 – Jul 2025)",
+            "description": ""
         }
     ],
     "experiences_title": "Experiences",

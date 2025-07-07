@@ -15,6 +15,8 @@ export default function Home() {
   const pathname = usePathname();
 
   useEffect(() => {
+    if (typeof window === "undefined") return; // <- Previno execução no SSR
+
     const handleScroll = () => {
       const id = window.location.hash.replace("#", "");
       if (id) {
@@ -22,7 +24,10 @@ export default function Home() {
           const section = document.getElementById(id);
           if (section) {
             const offset = 200;
-            window.scrollTo({ top: section.offsetTop - offset, behavior: "smooth" });
+            window.scrollTo({
+              top: section.offsetTop - offset,
+              behavior: "smooth",
+            });
           }
         }, 500);
       }

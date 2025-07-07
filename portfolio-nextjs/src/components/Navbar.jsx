@@ -2,10 +2,18 @@
 
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useTranslation } from "../hooks/useTranslation";
 
 export default function Navbar() {
   const { t, i18n } = useTranslation("common");
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    if (i18n.isInitialized) setIsReady(true);
+  }, [i18n.isInitialized]);
+
+  if (!isReady) return null; // impede hidratação incorreta
 
   const navItems = [
     { label: t("about"), id: "sobre-mim" },

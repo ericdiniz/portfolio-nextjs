@@ -10,10 +10,16 @@ import {
   Link,
   Typography,
 } from "@mui/material";
+import { useEffect, useState } from "react";
 import { useTranslation } from "../hooks/useTranslation";
 
 const Contact = () => {
   const { t } = useTranslation("common");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true); // Garante que a tradução seja carregada no client
+  }, []);
 
   const contacts = [
     {
@@ -32,6 +38,8 @@ const Contact = () => {
       link: "https://github.com/ericdiniz",
     },
   ];
+
+  if (!mounted) return null;
 
   return (
     <Box
