@@ -1,0 +1,101 @@
+{
+    "portfolio": "Meu Portfólio",
+    "about": "Sobre Mim",
+    "experiences": "Experiências",
+    "technologies": "Tecnologias",
+    "contact": "Contato",
+    "contact_title": "Contato",
+    "hero_text": "QA Engineer, 2 anos de experiência em testes, com foco em testes automatizados no Playwright (TypeScript).",
+    "about_paragraph1": "Sou Eric Rodrigues Diniz, tenho 24 anos e estou no 7º período do curso de Engenharia de Software na PUC Minas (Campus Lourdes). Neste semestre, estou me aprofundando em temas como gestão da produção de software, desenvolvimento de aplicações móveis e distribuídas, segurança e auditoria de sistemas, além de tópicos avançados em engenharia de software. Também iniciei meu Trabalho de Conclusão de Curso, consolidando os conhecimentos adquiridos ao longo da graduação.",
+    "about_paragraph2": "Sou um profissional apaixonado por Qualidade de Software, Automação de Testes e Desenvolvimento Full Stack. Minha expertise está na criação de soluções eficientes e escaláveis, garantindo código limpo, bem estruturado e testável.",
+    "about_paragraph3": "Tenho forte atuação em Backend (Node.js com Express e Spring Boot) e Frontend (Next.js e Nuxt.js), aplicando os princípios do SOLID e Clean Code para construir sistemas robustos e de fácil manutenção. Além disso, tenho experiência em ambiente de trabalho como QA Automação e QA Manual, atuando por 2 anos com Playwright e TypeScript para testes de regressão via frontend e API. Também realizei testes de integração utilizando Axios e TypeScript. Contribuí para a construção de uma plataforma de testes na empresa MOVA SEP SA, utilizando Nuxt.js, Pinia e Axios no frontend, enquanto o backend foi desenvolvido em PHP com Hyperf.",
+    "experience1_title": "Estagiário QA Automação | Cargo Sapiens",
+    "experience1_period": "abril de 2025 - atualmente",
+    "experience1_details": [
+        {
+            "label": "Testes Automatizados",
+            "description": "Desenvolvo testes automatizados com Playwright (TypeScript), Orange Testing e Postman, abrangendo testes unitários, de integração e de aceitação (E2E). Também integro os testes às pipelines de CI/CD, assegurando a qualidade contínua e a confiabilidade das aplicações."
+        },
+        {
+            "label": "Documentação e Análise",
+            "description": "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão."
+        }
+    ],
+    "experience2_title": "Estagiário QA Automação | Mova SEP SA",
+    "experience2_period": "janeiro de 2023 - fevereiro 2025",
+    "experience2_details": [
+        {
+            "label": "Testes Automatizados",
+            "description": "Desenvolvimento de testes automatizados com Playwright e TypeScript, além da execução de testes via API, assegurando a qualidade e confiabilidade das aplicações."
+        },
+        {
+            "label": "Documentação e Análise",
+            "description": "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão."
+        },
+        {
+            "label": "Desenvolvimento Frontend",
+            "description": "Implementação de integrações no frontend com Vue.js, utilizando Axios, garantindo comunicação eficiente com APIs em arquiteturas baseadas em MVC e microsserviços."
+        },
+        {
+            "label": "Experiência do Usuário",
+            "description": "Construção de interfaces sólidas, responsivas e intuitivas com Vuetify, proporcionando uma experiência consistente e de alta qualidade para o usuário."
+        },
+        {
+            "label": "Testes Unitários",
+            "description": "Criação de testes unitários utilizando JEST no NuxtJS para garantir a estabilidade e confiabilidade do código."
+        }
+    ],
+    "experience3_title": "Monitor em Engenharia de Software | PUC Minas",
+    "experience3_period": "outubro de 2023 - julho de 2025",
+    "experience3_details": [
+        {
+            "label": "Responsabilidades",
+            "description": "Responsável por auxiliar alunos com dificuldades em atividades e avaliações da disciplina, além de contribuir com a elaboração de exercícios, a pedido dos professores, durante o período de monitoria."
+        },
+        {
+            "label": "Programação Modular (out 2023 – dez 2023)",
+            "description": ""
+        },
+        {
+            "label": "Fundamentos de Projeto e Análise de Algoritmos (fev 2024 – jun 2024)",
+            "description": ""
+        },
+        {
+            "label": "Programação Modular (ago 2024 – dez 2024)",
+            "description": ""
+        },
+        {
+            "label": "Teoria dos Grafos (fev 2025 – jul 2025)",
+            "description": ""
+        }
+    ],
+    "experiences_title": "Experiências",
+    "tech_categories": {
+        "frameworks": "Linguagens e Frameworks",
+        "tools": "Bibliotecas e Ferramentas",
+        "testing": "Testes e Qualidade de Software",
+        "management": "Metodologias e Gerenciamento",
+        "cicd": "CI/CD e Outras Ferramentas"
+    },
+    "tech.spring": "Java (Spring Boot)",
+    "tech.node": "Node.js",
+    "tech.js": "JavaScript (JS)",
+    "tech.ts": "TypeScript (TS)",
+    "tech.react": "React.JS",
+    "tech.vue": "Vue.js",
+    "tech.express": "Express",
+    "tech.next": "NextJS",
+    "tech.nuxt": "NuxtJS",
+    "tech.mui": "Material-UI (MUI)",
+    "tech.git": "Git",
+    "tech.jest": "Jest",
+    "tech.junit": "JUnit",
+    "tech.cypress": "Cypress",
+    "tech.postman": "Postman",
+    "tech.playwright": "Playwright",
+    "tech.manual": "Testes Manuais",
+    "tech.jira": "Jira (Scrum e Kanban)",
+    "tech.vercel": "CI/CD (Vercel)",
+    "tech.office": "Microsoft Office",
+    "tech.orange": "Orange Testing"
+}

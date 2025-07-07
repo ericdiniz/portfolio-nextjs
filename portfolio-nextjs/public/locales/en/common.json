@@ -1,0 +1,81 @@
+{
+    "portfolio": "My Portfolio",
+    "about": "About Me",
+    "experiences": "Experiences",
+    "technologies": "Technologies",
+    "contact_title": "Contact",
+    "contact": "Contact",
+    "hero_text": "QA Engineer, 2 years of experience in testing, focused on automated testing with TS and Playwright.",
+    "about_paragraph1": "I'm Eric Rodrigues Diniz, 24 years old, currently in the 6th semester of the Software Engineering course at PUC Minas (Lourdes Campus). This semester, I'm studying software measurement and experimentation, software economics, and configuration and evolution management.",
+    "about_paragraph2": "I'm a professional passionate about Software Quality, Test Automation, and Full Stack Development. My expertise lies in building efficient and scalable solutions, ensuring clean, well-structured, and testable code.",
+    "about_paragraph3": "I have strong experience in Backend (Node.js with Express and Spring Boot) and Frontend (Next.js and Nuxt.js), applying SOLID principles and Clean Code to build robust and maintainable systems. I also have 2 years of experience working as a QA (both automation and manual), using Playwright and TypeScript for frontend and API regression testing. I’ve also performed integration tests using Axios and TypeScript. I contributed to building a testing platform at MOVA SEP SA using Nuxt.js, Pinia, and Axios on the frontend, while the backend was developed in PHP with Hyperf.",
+    "experience1_title": "QA Automation Intern | Mova SEP SA",
+    "experience1_period": "January 2023 - February 2025",
+    "experience1_details": [
+        {
+            "label": "Automated Testing",
+            "description": "Development of automated tests using Playwright and TypeScript, including API testing, ensuring the quality and reliability of applications."
+        },
+        {
+            "label": "Documentation and Analysis",
+            "description": "Created system and process documentation, helping to identify and analyze failures during the software testing process under supervision."
+        },
+        {
+            "label": "Frontend Development",
+            "description": "Implemented frontend integrations using Vue.js and Axios, ensuring efficient API communication in MVC and microservices-based architectures."
+        },
+        {
+            "label": "User Experience",
+            "description": "Built robust, responsive, and intuitive interfaces using Vuetify, delivering a consistent and high-quality user experience."
+        },
+        {
+            "label": "Unit Testing",
+            "description": "Created unit tests with JEST in NuxtJS to ensure code stability and reliability."
+        }
+    ],
+    "experience2_title": "Software Engineering Monitor | PUC Minas",
+    "experience2_period": "October 2023 - December 2024",
+    "experience2_details": [
+        {
+            "label": "Modular Programming (Oct 2023 – Dec 2023)",
+            "description": "Supported students with coursework and assessments for the discipline."
+        },
+        {
+            "label": "Foundations of Project and Algorithm Analysis (Feb 2024 – Jun 2024)",
+            "description": "Supported students with coursework and assessments for the discipline."
+        },
+        {
+            "label": "Modular Programming (Aug 2024 – Dec 2024)",
+            "description": "Supported students with coursework and assessments for the discipline."
+        }
+    ],
+    "experiences_title": "Experiences",
+    "tech_categories": {
+        "frameworks": "Languages and Frameworks",
+        "tools": "Libraries and Tools",
+        "testing": "Testing and Software Quality",
+        "management": "Methodologies and Management",
+        "cicd": "CI/CD and Other Tools"
+    },
+    "tech.spring": "Java (Spring Boot)",
+    "tech.node": "Node.js",
+    "tech.js": "JavaScript (JS)",
+    "tech.ts": "TypeScript (TS)",
+    "tech.react": "React.JS",
+    "tech.vue": "Vue.js",
+    "tech.express": "Express",
+    "tech.next": "NextJS",
+    "tech.nuxt": "NuxtJS",
+    "tech.mui": "Material-UI (MUI)",
+    "tech.git": "Git",
+    "tech.jest": "Jest",
+    "tech.junit": "JUnit",
+    "tech.cypress": "Cypress",
+    "tech.postman": "Postman",
+    "tech.playwright": "Playwright",
+    "tech.manual": "Manual Testing",
+    "tech.jira": "Jira (Scrum and Kanban)",
+    "tech.vercel": "CI/CD (Vercel)",
+    "tech.office": "Microsoft Office",
+    "tech.orange": "Orange Testing"
+}

@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 import {
   FaGitAlt,
@@ -22,55 +24,75 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
+import { useTranslation } from "../hooks/useTranslation";
 import PlaywrightIcon from "./icons/PlaywrightIcon";
 
-// Mapeamento de tecnologias com ícones
-const techCategories = {
-  "Linguagens e Frameworks": [
-    { name: "Java (Spring Boot)", icon: <SiSpringboot size={30} /> },
-    { name: "Node.js", icon: <FaNodeJs size={30} /> },
-    { name: "JavaScript (JS)", icon: <FaJs size={30} /> },
-    { name: "TypeScript (TS)", icon: <SiTypescript size={30} /> },
-    { name: "React.JS", icon: <FaReact size={30} /> },
-    { name: "Vue.js", icon: <FaVuejs size={30} /> },
-    { name: "Express", icon: <SiExpress size={30} /> },
-    { name: "NextJS", icon: <SiNextdotjs size={30} /> },
-    { name: "NuxtJS", icon: <SiNuxtdotjs size={30} /> },
-  ],
-  "Bibliotecas e Ferramentas": [
-    { name: "Material-UI (MUI)", icon: <SiMui size={30} /> },
-    { name: "Git", icon: <FaGitAlt size={30} /> },
-  ],
-  "Testes e Qualidade de Software": [
-    { name: "Jest", icon: <SiJest size={30} /> },
-    { name: "JUnit", icon: <SiJunit5 size={30} /> },
-    { name: "Cypress", icon: <SiCypress size={30} /> },
-    { name: "Postman", icon: <SiPostman size={30} /> },
-    { name: "Playwright", icon: <PlaywrightIcon size={30} color="#ffffff" /> },
-    { name: "Testes Manuais", icon: <MdOutlineBugReport size={30} /> },
-  ],
-  "Metodologias e Gerenciamento": [
-    { name: "Jira (Scrum e Kanban)", icon: <FaJira size={30} /> },
-  ],
-  "CI/CD e Outras Ferramentas": [
-    { name: "CI/CD (Vercel)", icon: <SiVercel size={30} /> },
-    { name: "Microsoft Office", icon: <FaMicrosoft size={30} /> },
-  ],
-};
-
 const Technologies = () => {
+  const { t } = useTranslation("common");
+
+  const techCategories = {
+    [t("tech_categories.frameworks")]: [
+      { name: "tech.spring", icon: <SiSpringboot size={30} color="#6DB33F" /> },
+      { name: "tech.node", icon: <FaNodeJs size={30} color="#3C873A" /> },
+      { name: "tech.js", icon: <FaJs size={30} color="#F7DF1E" /> },
+      { name: "tech.ts", icon: <SiTypescript size={30} color="#3178C6" /> },
+      { name: "tech.react", icon: <FaReact size={30} color="#61DAFB" /> },
+      { name: "tech.vue", icon: <FaVuejs size={30} color="#42b883" /> },
+      { name: "tech.express", icon: <SiExpress size={30} color="#000000" /> },
+      { name: "tech.next", icon: <SiNextdotjs size={30} color="#000000" /> },
+      { name: "tech.nuxt", icon: <SiNuxtdotjs size={30} color="#00DC82" /> },
+    ],
+    [t("tech_categories.tools")]: [
+      { name: "tech.mui", icon: <SiMui size={30} color="#007FFF" /> },
+      { name: "tech.git", icon: <FaGitAlt size={30} color="#F05032" /> },
+    ],
+    [t("tech_categories.testing")]: [
+      { name: "tech.jest", icon: <SiJest size={30} color="#99425b" /> },
+      { name: "tech.junit", icon: <SiJunit5 size={30} color="#25A162" /> },
+      { name: "tech.cypress", icon: <SiCypress size={30} color="#4B4B4B" /> },
+      { name: "tech.postman", icon: <SiPostman size={30} color="#FF6C37" /> },
+      {
+        name: "tech.playwright",
+        icon: <PlaywrightIcon size={30} color="#F44F26" />,
+      },
+      {
+        name: "tech.orange",
+        icon: (
+          <img
+            src="/images/orangetesting.png"
+            alt="Orange Testing"
+            width={30}
+            height={30}
+            style={{ objectFit: "contain" }}
+          />
+        ),
+      },
+      {
+        name: "tech.manual",
+        icon: <MdOutlineBugReport size={30} color="#E53935" />,
+      },
+    ],
+    [t("tech_categories.management")]: [
+      { name: "tech.jira", icon: <FaJira size={30} color="#0052CC" /> },
+    ],
+    [t("tech_categories.cicd")]: [
+      { name: "tech.vercel", icon: <SiVercel size={30} color="#000000" /> },
+      { name: "tech.office", icon: <FaMicrosoft size={30} color="#F25022" /> },
+    ],
+  };
+
   return (
     <Box
       sx={{
         backgroundColor: "#121212",
         textAlign: "center",
         my: 4,
-        color: "#fff",
+        color: "inherit",
         padding: "50px 20px",
       }}
     >
       <Typography variant="h4" gutterBottom>
-        Tecnologias
+        {t("technologies")}
       </Typography>
       {Object.entries(techCategories).map(([category, techs]) => (
         <Box key={category} sx={{ mb: 4 }}>
@@ -94,7 +116,7 @@ const Technologies = () => {
                   <CardContent sx={{ textAlign: "center" }}>
                     {icon}
                     <Typography variant="body2" sx={{ mt: 1 }}>
-                      {name}
+                      {t(name)}
                     </Typography>
                   </CardContent>
                 </Card>

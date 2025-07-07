@@ -1,4 +1,4 @@
-// layout.tsx
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt" dir="ltr">
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
@@ -30,7 +30,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{ backgroundColor: "#000000", color: "#FFFFFF" }}
       >
-        <main>{children}</main>
+        {/* Navbar deve ser importada em page.js ou como Client Component */}
+        {children}
       </body>
     </html>
   );

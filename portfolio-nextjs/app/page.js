@@ -1,14 +1,15 @@
 "use client";
+import "@/src/i18n";
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Experiences from "../components/Experiences";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Technologies from "../components/Technologies";
+import About from "@/src/components/About";
+import Contact from "@/src/components/Contact";
+import Experiences from "@/src/components/Experiences";
+import Hero from "@/src/components/Hero";
+import Navbar from "@/src/components/Navbar";
+import Technologies from "@/src/components/Technologies";
 
 export default function Home() {
   const pathname = usePathname();

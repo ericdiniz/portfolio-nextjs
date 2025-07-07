@@ -1,6 +1,10 @@
+"use client";
 import { Avatar, Box, Grid, Typography } from "@mui/material";
+import { useTranslation } from "../hooks/useTranslation";
 
 const AboutMe = () => {
+  const { t } = useTranslation("common");
+
   return (
     <Box
       sx={{ backgroundColor: "#121212", color: "#fff", padding: "50px 20px" }}
@@ -9,32 +13,16 @@ const AboutMe = () => {
         {/* Texto - Alinhado à Esquerda */}
         <Grid xs={12} md={7} item sx={{ textAlign: "left" }}>
           <Typography variant="h4" fontWeight="bold" gutterBottom>
-            Sobre Mim
+            {t("about")}
           </Typography>
           <Typography variant="body1" paragraph>
-            Sou Eric Rodrigues Diniz, tenho 24 anos e curso o 6º período de
-            Engenharia de Software na PUC Minas (Campus Lourdes), nesse semestre
-            estou aprendendo sobre medição e experimentação de software,
-            engenharia econômica para software e gerência de configuração e
-            evolução de software.
+            {t("about_paragraph1")}
           </Typography>
           <Typography variant="body1" paragraph>
-            Sou um profissional apaixonado por Qualidade de Software, Automação
-            de Testes e Desenvolvimento Full Stack. Minha expertise está na
-            criação de soluções eficientes e escaláveis, garantindo código
-            limpo, bem estruturado e testável.
+            {t("about_paragraph2")}
           </Typography>
           <Typography variant="body1" paragraph>
-            Tenho forte atuação em Backend (Node.js com Express e Spring Boot) e
-            Frontend (Next.js e Nuxt.js), aplicando os princípios do SOLID e
-            Clean Code para construir sistemas robustos e de fácil manutenção.
-            Além disso, tenho experiência em ambiente de trabalho como QA
-            Automação e QA Manual, atuando por 2 anos com Playwright e
-            TypeScript para testes de regressão via frontend e API. Também
-            realizei testes de integração utilizando Axios e TypeScript.
-            Contribuí para a construção de uma plataforma de testes na empresa
-            MOVA SEP SA, utilizando Nuxt.js, Pinia e Axios no frontend, enquanto
-            o backend foi desenvolvido em PHP com Hyperf.
+            {t("about_paragraph3")}
           </Typography>
         </Grid>
 

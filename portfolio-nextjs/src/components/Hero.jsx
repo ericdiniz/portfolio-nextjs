@@ -1,4 +1,10 @@
+"use client";
+
+import { useTranslation } from "../hooks/useTranslation";
+
 export default function Hero() {
+  const { t } = useTranslation("common");
+
   return (
     <section
       style={{
@@ -9,10 +15,7 @@ export default function Hero() {
         textAlign: "center",
       }}
     >
-      <h3>
-        QA Engineer, 2 anos de experiência em testes, com foco em testes
-        automatizados com TS e Playwright.
-      </h3>
+      <h3>{t("hero_text")}</h3>
     </section>
   );
 }

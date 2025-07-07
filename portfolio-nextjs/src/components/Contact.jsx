@@ -1,4 +1,6 @@
-import { Email, GitHub, LinkedIn, Phone } from "@mui/icons-material";
+"use client";
+
+import { Email, GitHub, LinkedIn } from "@mui/icons-material";
 import {
   Box,
   Card,
@@ -8,31 +10,29 @@ import {
   Link,
   Typography,
 } from "@mui/material";
-
-const contacts = [
-  {
-    icon: <Phone />,
-    text: "(31) 99665-1808",
-    link: "tel:+5531996651808",
-  },
-  {
-    icon: <Email />,
-    text: "eric.r.diniz@gmail.com",
-    link: "mailto:eric.r.diniz@gmail.com",
-  },
-  {
-    icon: <LinkedIn />,
-    text: "linkedin.com/in/ericdiniz",
-    link: "https://linkedin.com/in/ericdiniz",
-  },
-  {
-    icon: <GitHub />,
-    text: "github.com/ericdiniz",
-    link: "https://github.com/ericdiniz",
-  },
-];
+import { useTranslation } from "../hooks/useTranslation";
 
 const Contact = () => {
+  const { t } = useTranslation("common");
+
+  const contacts = [
+    {
+      icon: <Email />,
+      text: "eric.r.diniz@gmail.com",
+      link: "mailto:eric.r.diniz@gmail.com",
+    },
+    {
+      icon: <LinkedIn />,
+      text: "linkedin.com/in/ericdiniz",
+      link: "https://linkedin.com/in/ericdiniz",
+    },
+    {
+      icon: <GitHub />,
+      text: "github.com/ericdiniz",
+      link: "https://github.com/ericdiniz",
+    },
+  ];
+
   return (
     <Box
       sx={{
@@ -43,7 +43,7 @@ const Contact = () => {
       }}
     >
       <Typography variant="h4" fontWeight="bold" gutterBottom>
-        Contato
+        {t("contact_title")}
       </Typography>
       <Grid container spacing={3} justifyContent="center">
         {contacts.map((contact, index) => (
