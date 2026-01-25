@@ -9,64 +9,56 @@
     "about_paragraph1": "Sou Eric Rodrigues Diniz, tenho 24 anos e estou no 7º período do curso de Engenharia de Software na PUC Minas (Campus Lourdes). Neste semestre, estou me aprofundando em temas como gestão da produção de software, desenvolvimento de aplicações móveis e distribuídas, segurança e auditoria de sistemas, além de tópicos avançados em engenharia de software. Também iniciei meu Trabalho de Conclusão de Curso, consolidando os conhecimentos adquiridos ao longo da graduação.",
     "about_paragraph2": "Sou um profissional apaixonado por Qualidade de Software, Automação de Testes e Desenvolvimento Full Stack. Minha expertise está na criação de soluções eficientes e escaláveis, garantindo código limpo, bem estruturado e testável.",
     "about_paragraph3": "Tenho forte atuação em Backend (Node.js com Express e Spring Boot) e Frontend (Next.js e Nuxt.js), aplicando os princípios do SOLID e Clean Code para construir sistemas robustos e de fácil manutenção. Além disso, tenho experiência em ambiente de trabalho como QA Automação e QA Manual, atuando por 2 anos com Playwright e TypeScript para testes de regressão via frontend e API. Também realizei testes de integração utilizando Axios e TypeScript. Contribuí para a construção de uma plataforma de testes na empresa MOVA SEP SA, utilizando Nuxt.js, Pinia e Axios no frontend, enquanto o backend foi desenvolvido em PHP com Hyperf.",
-    "experience1_title": "Estagiário QA Automação | Cargo Sapiens",
+    "experience1_title": "Cargo Sapiens",
     "experience1_period": "abril de 2025 - atualmente",
-    "experience1_details": [
+    "experience1_positions": [
         {
-            "label": "Testes Automatizados",
-            "description": "Desenvolvo testes automatizados com Playwright (TypeScript), Orange Testing e Postman, abrangendo testes unitários, de integração e de aceitação (E2E). Também integro os testes às pipelines de CI/CD, assegurando a qualidade contínua e a confiabilidade das aplicações."
+            "role": "Analista de Quality Assurance",
+            "period": "janeiro de 2026 - atualmente",
+            "highlights": [
+                "Projeto e implemento testes automatizados com Playwright (TypeScript), cobrindo integração e E2E, e integro-os às pipelines de CI/CD com relatórios de execução. Organizo os testes em cards bem estruturados, facilitando o trabalho em equipe e possibilitando a detecção ágil de regressões."
+            ]
         },
         {
-            "label": "Documentação e Análise",
-            "description": "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão."
+            "role": "Estagiário de Quality Assurance",
+            "period": "abril de 2025 - janeiro de 2026",
+            "highlights": [
+                "Desenvolvo testes automatizados com Playwright (TypeScript), Orange Testing e Postman, abrangendo testes unitários, de integração e de aceitação (E2E). Também integro os testes às pipelines de CI/CD, assegurando a qualidade contínua e a confiabilidade das aplicações.",
+                "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão."
+            ]
         }
     ],
-    "experience2_title": "Estagiário QA Automação | Mova SEP SA",
+    "experience2_title": "Mova SEP SA",
     "experience2_period": "janeiro de 2023 - fevereiro 2025",
-    "experience2_details": [
+    "experience2_positions": [
         {
-            "label": "Testes Automatizados",
-            "description": "Desenvolvimento de testes automatizados com Playwright e TypeScript, além da execução de testes via API, assegurando a qualidade e confiabilidade das aplicações."
-        },
-        {
-            "label": "Documentação e Análise",
-            "description": "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão."
-        },
-        {
-            "label": "Desenvolvimento Frontend",
-            "description": "Implementação de integrações no frontend com Vue.js, utilizando Axios, garantindo comunicação eficiente com APIs em arquiteturas baseadas em MVC e microsserviços."
-        },
-        {
-            "label": "Experiência do Usuário",
-            "description": "Construção de interfaces sólidas, responsivas e intuitivas com Vuetify, proporcionando uma experiência consistente e de alta qualidade para o usuário."
-        },
-        {
-            "label": "Testes Unitários",
-            "description": "Criação de testes unitários utilizando JEST no NuxtJS para garantir a estabilidade e confiabilidade do código."
+            "role": "Estagiário QA Automação",
+            "period": "janeiro de 2023 - fevereiro 2025",
+            "highlights": [
+                "Desenvolvimento de testes automatizados com Playwright e TypeScript, além da execução de testes via API, assegurando a qualidade e confiabilidade das aplicações.",
+                "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão.",
+                "Implementação de integrações no frontend com Vue.js, utilizando Axios, garantindo comunicação eficiente com APIs em arquiteturas baseadas em MVC e microsserviços.",
+                "Construção de interfaces sólidas, responsivas e intuitivas com Vuetify, proporcionando uma experiência consistente e de alta qualidade para o usuário.",
+                "Criação de testes unitários utilizando JEST no NuxtJS para garantir a estabilidade e confiabilidade do código."
+            ]
         }
     ],
-    "experience3_title": "Monitor em Engenharia de Software | PUC Minas",
+    "experience3_title": "PUC Minas",
     "experience3_period": "outubro de 2023 - julho de 2025",
-    "experience3_details": [
+    "experience3_positions": [
         {
-            "label": "Responsabilidades",
-            "description": "Responsável por auxiliar alunos com dificuldades em atividades e avaliações da disciplina, além de contribuir com a elaboração de exercícios, a pedido dos professores, durante o período de monitoria."
-        },
-        {
-            "label": "Programação Modular (out 2023 – dez 2023)",
-            "description": ""
-        },
-        {
-            "label": "Fundamentos de Projeto e Análise de Algoritmos (fev 2024 – jun 2024)",
-            "description": ""
-        },
-        {
-            "label": "Programação Modular (ago 2024 – dez 2024)",
-            "description": ""
-        },
-        {
-            "label": "Teoria dos Grafos (fev 2025 – jul 2025)",
-            "description": ""
+            "role": "Monitor em Engenharia de Software",
+            "period": "outubro de 2023 - julho de 2025",
+            "highlights": [
+                {
+                    "label": "Responsabilidades",
+                    "description": "Responsável por auxiliar alunos com dificuldades em atividades e avaliações da disciplina, além de contribuir com a elaboração de exercícios, a pedido dos professores, durante o período de monitoria."
+                },
+                "Programação Modular (out 2023 – dez 2023)",
+                "Fundamentos de Projeto e Análise de Algoritmos (fev 2024 – jun 2024)",
+                "Programação Modular (ago 2024 – dez 2024)",
+                "Teoria dos Grafos (fev 2025 – jul 2025)"
+            ]
         }
     ],
     "experiences_title": "Experiências",

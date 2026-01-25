@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 import {
   FaGitAlt,
@@ -28,7 +29,14 @@ import { useTranslation } from "../hooks/useTranslation";
 import PlaywrightIcon from "./icons/PlaywrightIcon";
 
 const Technologies = () => {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    if (i18n && i18n.isInitialized) setIsReady(true);
+  }, [i18n && i18n.isInitialized]);
+
+  if (!isReady) return null;
 
   const techCategories = {
     [t("tech_categories.frameworks")]: [
