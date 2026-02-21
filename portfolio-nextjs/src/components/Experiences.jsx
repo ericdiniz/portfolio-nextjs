@@ -65,13 +65,6 @@ const Experiences = () => {
               }}
             >
               <CardContent>
-                <Typography
-                  variant="h6"
-                  fontWeight="bold"
-                  sx={{ color: "#fff" }}
-                >
-                  {exp.title}
-                </Typography>
                 {exp.positions ? (
                   (() => {
                     const posArray = Array.isArray(exp.positions)
@@ -241,6 +234,13 @@ const Experiences = () => {
                   })()
                 ) : (
                   <>
+                    <Typography
+                      variant="h6"
+                      fontWeight="bold"
+                      sx={{ color: "#fff" }}
+                    >
+                      {exp.title}
+                    </Typography>
                     <Typography variant="subtitle2" color="gray">
                       {exp.period}
                     </Typography>
