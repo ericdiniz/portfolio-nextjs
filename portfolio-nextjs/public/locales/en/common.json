@@ -19,7 +19,7 @@
             "role": "Quality Assurance Analyst",
             "period": "January 2026 - Present",
             "highlights": [
-                "I led the migration of the test suite from Orange Testing to Playwright (TypeScript), saving the company R$4,000 (BRL) per month and taking ownership of the new test architecture.",
+                "I led the migration of the test suite from Orange Testing to Playwright (TypeScript), generating significant monthly savings for the company and taking ownership of the new test architecture.",
                 "I built a code review pipeline with CodeRabbit and ESLint to validate test quality before merge, and I review pull requests from both the QA and Dev teams.",
                 "I implemented API, acceptance, and email delivery tests (with Greenmail and MailPit), along with integration and E2E tests using Playwright, integrated into CI/CD pipelines.",
                 "I organize tests into structured test case cards, guiding the team in building new test cases and speeding up regression detection."

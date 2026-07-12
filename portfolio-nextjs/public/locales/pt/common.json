@@ -19,7 +19,7 @@
             "role": "Analista de Quality Assurance",
             "period": "janeiro de 2026 - atualmente",
             "highlights": [
-                "Liderei a migração da suíte de testes do Orange Testing para o Playwright (TypeScript), economizando R$ 4 mil por mês para a empresa e assumindo a responsabilidade pela nova arquitetura de testes.",
+                "Liderei a migração da suíte de testes do Orange Testing para o Playwright (TypeScript), gerando economia mensal significativa para a empresa e assumindo a responsabilidade pela nova arquitetura de testes.",
                 "Criei um pipeline de revisão de código com CodeRabbit e ESLint para validar a qualidade dos testes antes do merge, e revejo os pull requests de toda a equipe de QA e Dev.",
                 "Implementei testes de API, de aceitação e de envio de e-mail (com Greenmail e MailPit), além de testes de integração e E2E com Playwright, integrados às pipelines de CI/CD.",
                 "Organizo os testes em cards estruturados, orientando o time na construção de novos casos e acelerando a detecção de regressões."
