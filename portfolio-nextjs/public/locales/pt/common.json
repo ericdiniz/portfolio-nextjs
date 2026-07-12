@@ -5,10 +5,13 @@
     "technologies": "Tecnologias",
     "contact": "Contato",
     "contact_title": "Contato",
-    "hero_text": "QA Engineer, 2 anos de experiência em testes, com foco em testes automatizados no Playwright (TypeScript).",
-    "about_paragraph1": "Sou Eric Rodrigues Diniz, tenho 25 anos e estou no 8º período do curso de Engenharia de Software na PUC Minas (Campus Lourdes). Neste semestre, estou realizando a disciplina Modelagem e Avaliação de Desempenho e vou defender meu Trabalho de Conclusão de Curso.",
-    "about_paragraph2": "Sou um profissional apaixonado por Qualidade de Software, Automação de Testes e Desenvolvimento Full Stack. Minha expertise está na criação de soluções eficientes e escaláveis, garantindo código limpo, bem estruturado e testável.",
-    "about_paragraph3": "Tenho forte atuação em Backend (Node.js com Express e Spring Boot) e Frontend (Next.js e Nuxt.js), aplicando os princípios do SOLID e Clean Code para construir sistemas robustos e de fácil manutenção. Além disso, tenho experiência em ambiente de trabalho como QA Automação e QA Manual, atuando por 2 anos com Playwright e TypeScript para testes de regressão via frontend e API. Também realizei testes de integração utilizando Axios e TypeScript. Contribuí para a construção de uma plataforma de testes na empresa MOVA SEP SA, utilizando Nuxt.js, Pinia e Axios no frontend, enquanto o backend foi desenvolvido em PHP com Hyperf.",
+    "hero_text": "QA Engineer com mais de 2 anos de experiência em testes de software, especializado em automação de testes com Playwright e TypeScript.",
+    "about_paragraph1": "Sou Eric Rodrigues Diniz, 25 anos, formado em Engenharia de Software pela PUC Minas (Campus Lourdes). Meu foco como profissional é atuar como QA Engineer, unindo automação de testes, qualidade de software e uma base sólida de desenvolvimento full stack.",
+    "about_paragraph2": "Tenho mais de 2 anos de experiência prática em QA Automatizado e Manual, utilizando Playwright e TypeScript para testes de regressão de frontend e API, além de testes de integração com Axios e TypeScript. Também contribuí para a construção de uma plataforma de testes na empresa MOVA SEP SA, atuando no frontend com Nuxt.js, Pinia e Axios.",
+    "about_paragraph3": "Como desenvolvedor, tenho forte atuação em Backend (Node.js com Express e Spring Boot) e Frontend (Next.js e Nuxt.js), aplicando os princípios de SOLID e Clean Code para construir sistemas robustos, testáveis e de fácil manutenção. Essa combinação entre desenvolvimento e qualidade me permite entender profundamente o que estou testando e propor soluções mais eficientes para garantir a confiabilidade do software.",
+    "about_tcc_title": "Trabalho de Conclusão de Curso",
+    "about_tcc_text": "No meu TCC, \"Avaliação Empírica da Maturidade de Testes em Pipelines CI/CD e seu Impacto na Qualidade de Software\", analisei 477 repositórios open-source no GitHub Actions e desenvolvi índices de maturidade de testes para investigar a relação entre automação de testes e qualidade de software. Repositórios com testes maduros atingiram 80,3% de taxa média de aprovação, contra apenas 5,9% nos de baixa maturidade, o que mostra na prática por que testes automatizados bem estruturados são essenciais para a confiabilidade do software.",
+    "about_tcc_download": "Baixar TCC (PDF)",
     "experience1_title": "Cargo Sapiens",
     "experience1_period": "abril de 2025 - atualmente",
     "experience1_positions": [
@@ -16,15 +19,18 @@
             "role": "Analista de Quality Assurance",
             "period": "janeiro de 2026 - atualmente",
             "highlights": [
-                "Projeto e implemento testes automatizados com Playwright (TypeScript), cobrindo integração e E2E, e integro-os às pipelines de CI/CD com relatórios de execução. Organizo os testes em cards bem estruturados, facilitando o trabalho em equipe e possibilitando a detecção ágil de regressões."
+                "Liderei a migração da suíte de testes do Orange Testing para o Playwright (TypeScript), economizando R$ 4 mil por mês para a empresa e assumindo a responsabilidade pela nova arquitetura de testes.",
+                "Criei um pipeline de revisão de código com CodeRabbit e ESLint para validar a qualidade dos testes antes do merge, e revejo os pull requests de toda a equipe de QA e Dev.",
+                "Implementei testes de API, de aceitação e de envio de e-mail (com Greenmail e MailPit), além de testes de integração e E2E com Playwright, integrados às pipelines de CI/CD.",
+                "Organizo os testes em cards estruturados, orientando o time na construção de novos casos e acelerando a detecção de regressões."
             ]
         },
         {
             "role": "Estagiário de Quality Assurance",
             "period": "abril de 2025 - janeiro de 2026",
             "highlights": [
-                "Desenvolvo testes automatizados com Playwright (TypeScript), Orange Testing e Postman, abrangendo testes unitários, de integração e de aceitação (E2E). Também integro os testes às pipelines de CI/CD, assegurando a qualidade contínua e a confiabilidade das aplicações.",
-                "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão."
+                "Desenvolvo testes unitários, de integração e de aceitação (E2E) com Playwright (TypeScript), Orange Testing e Postman, integrados às pipelines de CI/CD.",
+                "Elaboro documentação técnica de sistemas e rotinas, apoiando a identificação e análise de falhas no processo de teste de software, sob supervisão."
             ]
         }
     ],
@@ -35,11 +41,11 @@
             "role": "Estagiário QA Automação",
             "period": "janeiro de 2023 - fevereiro 2025",
             "highlights": [
-                "Desenvolvimento de testes automatizados com Playwright e TypeScript, além da execução de testes via API, assegurando a qualidade e confiabilidade das aplicações.",
-                "Elaboração de documentação de sistemas, programas e rotinas, auxiliando na identificação e análise de falhas durante o processo de teste de software, sob supervisão.",
-                "Implementação de integrações no frontend com Vue.js, utilizando Axios, garantindo comunicação eficiente com APIs em arquiteturas baseadas em MVC e microsserviços.",
-                "Construção de interfaces sólidas, responsivas e intuitivas com Vuetify, proporcionando uma experiência consistente e de alta qualidade para o usuário.",
-                "Criação de testes unitários utilizando JEST no NuxtJS para garantir a estabilidade e confiabilidade do código."
+                "Desenvolvi testes automatizados e testes via API com Playwright e TypeScript, assegurando qualidade e confiabilidade das aplicações.",
+                "Elaborei documentação técnica de sistemas e rotinas, apoiando a identificação e análise de falhas no processo de teste de software.",
+                "Implementei integrações de frontend com Vue.js e Axios, garantindo comunicação eficiente com APIs em arquiteturas MVC e microsserviços.",
+                "Construí interfaces responsivas e intuitivas com Vuetify, elevando a consistência e a qualidade da experiência do usuário.",
+                "Criei testes unitários com Jest no NuxtJS, aumentando a estabilidade e a confiabilidade do código."
             ]
         }
     ],
@@ -52,7 +58,7 @@
             "highlights": [
                 {
                     "label": "Responsabilidades",
-                    "description": "Responsável por auxiliar alunos com dificuldades em atividades e avaliações da disciplina, além de contribuir com a elaboração de exercícios, a pedido dos professores, durante o período de monitoria."
+                    "description": "Auxiliei alunos com dificuldades em atividades e avaliações da disciplina, e colaborei na elaboração de exercícios a pedido dos professores."
                 },
                 "Programação Modular (out 2023 – dez 2023)",
                 "Fundamentos de Projeto e Análise de Algoritmos (fev 2024 – jun 2024)",

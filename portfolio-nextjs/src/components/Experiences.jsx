@@ -90,7 +90,14 @@ const Experiences = () => {
                             fontWeight="bold"
                             sx={{ color: "#fff" }}
                           >
-                            {pos.role} | {exp.title}
+                            {exp.title}
+                          </Typography>
+                          <Typography
+                            variant="subtitle1"
+                            fontWeight="bold"
+                            sx={{ color: "#fff", mt: 1 }}
+                          >
+                            {pos.role}
                           </Typography>
                           <Typography
                             variant="subtitle2"

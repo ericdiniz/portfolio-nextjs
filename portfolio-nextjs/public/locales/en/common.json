@@ -5,10 +5,13 @@
     "technologies": "Technologies",
     "contact": "Contact",
     "contact_title": "Contact",
-    "hero_text": "QA Engineer, 2 years of experience in testing, focused on automated testing with Playwright (TypeScript).",
-    "about_paragraph1": "I'm Eric Rodrigues Diniz, 25 years old, currently in the 8th semester of the Software Engineering course at PUC Minas (Lourdes Campus). This semester, I'm taking the Performance Modeling and Evaluation course and will be defending my Final Year Project.",
-    "about_paragraph2": "I'm a professional passionate about Software Quality, Test Automation, and Full Stack Development. My expertise lies in creating efficient and scalable solutions, ensuring clean, well-structured, and testable code.",
-    "about_paragraph3": "I have strong experience in Backend (Node.js with Express and Spring Boot) and Frontend (Next.js and Nuxt.js), applying SOLID principles and Clean Code to build robust and maintainable systems. I also have work experience in both Manual and Automated QA, working for 2 years with Playwright and TypeScript for frontend and API regression tests. I have also performed integration tests using Axios and TypeScript. I contributed to building a testing platform at MOVA SEP SA using Nuxt.js, Pinia, and Axios on the frontend, while the backend was developed in PHP with Hyperf.",
+    "hero_text": "QA Engineer with 2+ years of experience in software testing, specializing in test automation with Playwright and TypeScript.",
+    "about_paragraph1": "I'm Eric Rodrigues Diniz, a 25-year-old Software Engineering graduate from PUC Minas (Lourdes Campus). My focus as a professional is working as a QA Engineer, combining test automation, software quality assurance, and a solid full-stack development background.",
+    "about_paragraph2": "I have over 2 years of hands-on experience in Manual and Automated QA, designing and executing automated test suites with Playwright and TypeScript for frontend and API regression testing, along with integration tests using Axios and TypeScript. I also helped build a testing platform at MOVA SEP SA, working on the frontend with Nuxt.js, Pinia, and Axios.",
+    "about_paragraph3": "As a developer, I have strong experience in Backend (Node.js with Express and Spring Boot) and Frontend (Next.js and Nuxt.js), applying SOLID principles and Clean Code to build robust, testable, and maintainable systems. This blend of development and QA expertise lets me deeply understand what I'm testing and propose more effective solutions to ensure software reliability.",
+    "about_tcc_title": "Final Year Thesis (TCC)",
+    "about_tcc_text": "In my thesis, \"Empirical Evaluation of Testing Maturity in CI/CD Pipelines and Its Impact on Software Quality,\" I analyzed 477 open-source repositories on GitHub Actions and developed testing maturity indices to investigate the relationship between test automation and software quality. Repositories with mature testing practices reached an 80.3% average test pass rate, compared to just 5.9% in low-maturity ones, which shows in practice why well-structured automated testing is essential for software reliability.",
+    "about_tcc_download": "Download Thesis (PDF)",
     "experience1_title": "Cargo Sapiens",
     "experience1_period": "April 2025 - Present",
     "experience1_positions": [
@@ -16,15 +19,18 @@
             "role": "Quality Assurance Analyst",
             "period": "January 2026 - Present",
             "highlights": [
-                "I design and implement automated test suites using Playwright (TypeScript), covering integration and end-to-end (E2E) testing, and integrate them into CI/CD pipelines with execution reports. I organize tests into well-structured test case cards to streamline team collaboration and enable rapid regression detection. Preparation of system, program, and routine documentation, assisting in identifying and analyzing bugs during the software testing process under supervision."
+                "I led the migration of the test suite from Orange Testing to Playwright (TypeScript), saving the company R$4,000 (BRL) per month and taking ownership of the new test architecture.",
+                "I built a code review pipeline with CodeRabbit and ESLint to validate test quality before merge, and I review pull requests from both the QA and Dev teams.",
+                "I implemented API, acceptance, and email delivery tests (with Greenmail and MailPit), along with integration and E2E tests using Playwright, integrated into CI/CD pipelines.",
+                "I organize tests into structured test case cards, guiding the team in building new test cases and speeding up regression detection."
             ]
         },
         {
             "role": "Quality Assurance Intern",
             "period": "April 2025 - January 2026",
             "highlights": [
-                "I develop automated tests using Playwright (TypeScript), Orange Testing, and Postman, covering unit, integration, and acceptance (E2E) tests. I also integrate tests into CI/CD pipelines, ensuring continuous quality and reliability of applications.",
-                "Preparation of system, program, and routine documentation, assisting in identifying and analyzing bugs during the software testing process under supervision."
+                "I develop unit, integration, and acceptance (E2E) tests with Playwright (TypeScript), Orange Testing, and Postman, integrated into CI/CD pipelines.",
+                "I prepare technical documentation for systems and routines, supporting bug identification and analysis during the software testing process, under supervision."
             ]
         }
     ],
@@ -35,11 +41,11 @@
             "role": "QA Automation Intern",
             "period": "January 2023 - February 2025",
             "highlights": [
-                "Development of automated tests using Playwright and TypeScript, as well as API test execution, ensuring quality and application reliability.",
-                "Preparation of system, program, and routine documentation, assisting in identifying and analyzing bugs during the software testing process under supervision.",
-                "Implementation of frontend integrations using Vue.js and Axios, ensuring efficient API communication in MVC and microservices architectures.",
-                "Development of solid, responsive, and intuitive interfaces with Vuetify, delivering a consistent and high-quality user experience.",
-                "Creation of unit tests using JEST in NuxtJS to ensure code stability and reliability."
+                "I developed automated tests and API tests with Playwright and TypeScript, ensuring application quality and reliability.",
+                "I prepared technical documentation for systems and routines, supporting bug identification and analysis during the software testing process.",
+                "I implemented frontend integrations with Vue.js and Axios, ensuring efficient API communication across MVC and microservices architectures.",
+                "I built responsive, intuitive interfaces with Vuetify, raising the consistency and quality of the user experience.",
+                "I created unit tests with Jest in Nuxt.js, increasing code stability and reliability."
             ]
         }
     ],
@@ -52,7 +58,7 @@
             "highlights": [
                 {
                     "label": "Responsibilities",
-                    "description": "Responsible for assisting students with difficulties in activities and assessments of the discipline, and contributing to the development of exercises, upon request by professors, during the monitoring period."
+                    "description": "I assisted students facing difficulties with course activities and assessments, and helped develop exercises at professors' request."
                 },
                 "Modular Programming (Oct 2023 – Dec 2023)",
                 "Foundations of Project and Algorithm Analysis (Feb 2024 – Jun 2024)",

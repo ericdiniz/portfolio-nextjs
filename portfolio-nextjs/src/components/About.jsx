@@ -1,5 +1,6 @@
 "use client";
-import { Avatar, Box, Grid, Typography } from "@mui/material";
+import { Avatar, Box, Button, Grid, Typography } from "@mui/material";
+import DownloadIcon from "@mui/icons-material/Download";
 import { useTranslation } from "../hooks/useTranslation";
 
 const AboutMe = () => {
@@ -24,6 +25,23 @@ const AboutMe = () => {
           <Typography variant="body1" paragraph>
             {t("about_paragraph3")}
           </Typography>
+
+          <Typography variant="h6" fontWeight="bold" sx={{ mt: 3 }} gutterBottom>
+            {t("about_tcc_title")}
+          </Typography>
+          <Typography variant="body1" paragraph>
+            {t("about_tcc_text")}
+          </Typography>
+          <Button
+            variant="outlined"
+            color="inherit"
+            startIcon={<DownloadIcon />}
+            href="/docs/TCC_Eric_Diniz_Maturidade_de_Testes_em_Pipelines_CICD.pdf"
+            download
+            sx={{ mt: 1 }}
+          >
+            {t("about_tcc_download")}
+          </Button>
         </Grid>
 
         {/* Avatar - Centralizado */}
