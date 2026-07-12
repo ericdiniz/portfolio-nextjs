@@ -7,7 +7,7 @@
     "contact_title": "Contact",
     "hero_text": "QA Engineer with 2+ years of experience in software testing, specializing in test automation with Playwright and TypeScript.",
     "about_paragraph1": "I'm Eric Rodrigues Diniz, a 25-year-old Software Engineering graduate from PUC Minas (Lourdes Campus). My focus as a professional is working as a QA Engineer, combining test automation, software quality assurance, and a solid full-stack development background.",
-    "about_paragraph2": "I have over 2 years of hands-on experience in Manual and Automated QA, designing and executing automated test suites with Playwright and TypeScript for frontend and API regression testing, along with integration tests using Axios and TypeScript. I also helped build a testing platform at MOVA SEP SA, working on the frontend with Nuxt.js, Pinia, and Axios.",
+    "about_paragraph2": "I have over 2 years of hands-on experience in Manual and Automated QA, designing and executing automated test suites with Playwright and TypeScript for frontend and API regression testing, along with integration tests using Axios. I also helped build a testing platform at Mova SEP SA, working on the frontend with Nuxt.js and Pinia.",
     "about_paragraph3": "As a developer, I have strong experience in Backend (Node.js with Express and Spring Boot) and Frontend (Next.js and Nuxt.js), applying SOLID principles and Clean Code to build robust, testable, and maintainable systems. This blend of development and QA expertise lets me deeply understand what I'm testing and propose more effective solutions to ensure software reliability.",
     "about_tcc_title": "Final Year Thesis (TCC)",
     "about_tcc_text": "In my thesis, \"Empirical Evaluation of Testing Maturity in CI/CD Pipelines and Its Impact on Software Quality,\" I analyzed 477 open-source repositories on GitHub Actions and developed testing maturity indices to investigate the relationship between test automation and software quality. Repositories with mature testing practices reached an 80.3% average test pass rate, compared to just 5.9% in low-maturity ones, which shows in practice why well-structured automated testing is essential for software reliability.",
@@ -41,8 +41,8 @@
             "role": "QA Automation Intern",
             "period": "January 2023 - February 2025",
             "highlights": [
-                "I developed automated tests and API tests with Playwright and TypeScript, ensuring application quality and reliability.",
-                "I prepared technical documentation for systems and routines, supporting bug identification and analysis during the software testing process.",
+                "I developed automated tests with Playwright and TypeScript, including API tests, ensuring application quality and reliability.",
+                "I documented systems, programs, and routines, supporting bug identification throughout the testing process.",
                 "I implemented frontend integrations with Vue.js and Axios, ensuring efficient API communication across MVC and microservices architectures.",
                 "I built responsive, intuitive interfaces with Vuetify, raising the consistency and quality of the user experience.",
                 "I created unit tests with Jest in Nuxt.js, increasing code stability and reliability."
